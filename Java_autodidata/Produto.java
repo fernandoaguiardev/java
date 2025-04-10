@@ -1,34 +1,51 @@
 public class Produto {
-    //Atributos
     private String nome;
     private double preco;
+    private int codigo;
+    private int quantidade;
 
-    //Construtor
-    public Produto(String nome, double preco) {
+    public Produto(String nome, double preco, int quantidade, int codigo) {
         this.nome = nome;
         this.preco = preco;
-
+        this.quantidade = quantidade;
+        this.codigo = codigo;
     }
 
-    //pegadores e configuradores
+    // Getters e Setters
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
     public String getNome() {
         return nome;
     }
+    
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public int getCodigo() {
+        return codigo;
+    }
+    
+    public final void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+    
     public double getPreco() {
         return preco;
     }
+    
     public void setPreco(double preco) {
         this.preco = preco;
     }
-
-    //String bunita no terminar
+    
     @Override
     public String toString() {
-        return nome + " - R$" + preco;
+        return "Cód: " + codigo + " | " + nome + " | R$ " + preco + " | Qtd: " + quantidade;
     }
-
-    
 }
