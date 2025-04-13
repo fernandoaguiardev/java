@@ -16,8 +16,8 @@ public class TelaCadastro extends JFrame {
     private JButton botaoTema;
 
     public TelaCadastro() {
-        setTitle("SertãoSoft - Cadastro de Produtos");
-        setSize(800, 500);
+        setTitle("Cadastro de Produtos");
+        setSize(1024, 500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null); // centraliza
 
