@@ -13,6 +13,8 @@ public class Aula02 {
         c1.recarregar();
         c1.rabiscar();
 
+        System.out.println(c1.toString());
+
     }
 
 }

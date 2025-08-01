@@ -40,4 +40,16 @@ public class Caneta {
         this.carga += 100;
     }
 
+    @Override
+    public String toString() {
+
+        return "Caneta{" +
+                "modelo='" + modelo + '\'' +
+                ", cor='" + cor + '\'' +
+                ", ponta=" + ponta +
+                ", carga=" + carga +
+                ", tampada=" + tampada +
+                '}';
+    }
+
 }

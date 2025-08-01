@@ -13,7 +13,7 @@ public class Caneta {
     public String cor;
     private float ponta;
     protected int carga;
-    private boolean tampada;
+    protected boolean tampada;
 
     /*
      * Métodos Acessores
@@ -77,6 +77,12 @@ public class Caneta {
      * de um objeto já formado, ou seja, um construtor inicializa um objeto.
      */
 
+    // Construtores são métodos especiais que têm o mesmo nome da classe e não
+    // possuem tipo de retorno, nem mesmo void.
+    // aqui temos uma sobrecarga de construtores, ou seja, temos dois construtores
+    // diferentes, um com parâmetros e outro sem parâmetros.
+    // assinaturas são diferentes, pois o número de parâmetros é diferente.
+
     // 🔹 Construtor SEM parâmetros (valores padrão)
     public Caneta() {
         this.modelo = "Genérica";
@@ -86,7 +92,7 @@ public class Caneta {
         this.tampada = true;
     }
 
-    // 🔹 Construtor COM parâmetros
+    // 🔹 Construtor COM parâmetros 
     public Caneta(String modelo, String cor, float ponta, int carga, boolean tampada) {
         this.modelo = modelo;
         this.cor = cor;

@@ -37,7 +37,7 @@ public class Caneta {
         return this.carga;
     }
 
-    public boolean getTampada() {
+    public boolean isTampada() {
         return this.tampada;
     }
 
@@ -97,7 +97,7 @@ public class Caneta {
     public void status() {
         System.out.println("Modelo: " + this.getModelo());
         System.out.println("Cor: " + this.getCor());
-        System.out.println("Está tampada? " + (this.getTampada() ? "Sim" : "Não"));
+        System.out.println("Está tampada? " + (this.isTampada() ? "Sim" : "Não"));
         System.out.println("Ponta: " + this.getPonta());
         System.out.println("Carga: " + this.getCarga());
     }
